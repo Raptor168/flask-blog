@@ -1,0 +1,11 @@
+<a href="{{url_for('index')}}">Back</a>
+
+<h2>{{name['name']}}</h2>
+<p>{{name['id']}}</p>
+
+<br>
+
+<form action="" method="post">
+	<input type="text" name="user_name" value="{{request.form['user_name'] or name['name']}}">
+	<button type="submit">Save</button>
+</form>
