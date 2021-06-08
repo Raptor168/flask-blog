@@ -1,30 +1,6 @@
 from flask import render_template, request, url_for, flash, redirect
-# from sqlalchemy.orm import sessionmaker
-# from sqlalchemy import Column, ForeignKey, Integer, String, Text
-# from sqlalchemy.ext.declarative import declarative_base
-# from sqlalchemy.orm import relationship
-# from sqlalchemy import create_engine
-# import sys
 from werkzeug.exceptions import abort
 from db import db, app, Users
-
-
-# Base = declarative_base()
-#
-# engine = create_engine('mysql+mysqlconnector://root:root@localhost/mydb')
-#
-#
-# class Users(Base):
-# 	__tablename__ = 'users'
-#
-# 	id = Column(Integer, primary_key=True)
-# 	name = Column(Text, unique=False, nullable=False)
-#
-#
-# Base.metadata.bind = engine
-#
-# DBSession = sessionmaker(bind=engine)
-# session = DBSession()
 
 
 def get_name(name_id):
